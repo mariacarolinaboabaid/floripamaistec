@@ -1,0 +1,15 @@
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/bin/Debug/net7.0/ex_004
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/bin/Debug/net7.0/ex_004.deps.json
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/bin/Debug/net7.0/ex_004.runtimeconfig.json
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/bin/Debug/net7.0/ex_004.dll
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/bin/Debug/net7.0/ex_004.pdb
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/obj/Debug/net7.0/ex_004.csproj.AssemblyReference.cache
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/obj/Debug/net7.0/ex_004.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/obj/Debug/net7.0/ex_004.AssemblyInfoInputs.cache
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/obj/Debug/net7.0/ex_004.AssemblyInfo.cs
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/obj/Debug/net7.0/ex_004.csproj.CoreCompileInputs.cache
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/obj/Debug/net7.0/ex_004.dll
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/obj/Debug/net7.0/refint/ex_004.dll
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/obj/Debug/net7.0/ex_004.pdb
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/obj/Debug/net7.0/ex_004.genruntimeconfig.cache
+/Users/mariacarolinaboabaid/Projects/ex_004/ex_004/obj/Debug/net7.0/ref/ex_004.dll
