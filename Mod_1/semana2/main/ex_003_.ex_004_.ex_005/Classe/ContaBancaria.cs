@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Runtime.ConstrainedExecution;
 
-namespace ex_003_.ex_004_.ex_005.Classe
+namespace ex_003_.ex_004_.ex_005_.ex_006.Classe
 {
 	// Declaração da classe
 	public class ContaBancaria

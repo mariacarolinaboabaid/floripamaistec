@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{6E9A891A-D65D-4749-812B-6D2A7AC77787}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ex__003__.ex__004__.ex__005__.ex__006 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Classe/ContaBancaria.cs" Line="50" Column="97" />
+      <File FileName="Program.cs" Line="20" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ex_003_.ex_004_.ex_005_.ex_006" expanded="True">
+            <Node name="ex_003_.ex_004_.ex_005" expanded="True">
+              <Node name="Classe" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

@@ -1,4 +1,4 @@
-﻿using ex_003_.ex_004_.ex_005.Classe;
+﻿using ex_003_.ex_004_.ex_005_.ex_006.Classe;
 
 // Instanciação da classe
 ContaBancaria conta = new ContaBancaria ();
