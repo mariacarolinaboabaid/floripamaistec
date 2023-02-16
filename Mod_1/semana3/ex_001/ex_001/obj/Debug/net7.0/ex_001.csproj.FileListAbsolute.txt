@@ -1,0 +1,15 @@
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/bin/Debug/net7.0/ex_001
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/bin/Debug/net7.0/ex_001.deps.json
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/bin/Debug/net7.0/ex_001.runtimeconfig.json
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/bin/Debug/net7.0/ex_001.dll
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/bin/Debug/net7.0/ex_001.pdb
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/Debug/net7.0/ex_001.csproj.AssemblyReference.cache
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/Debug/net7.0/ex_001.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/Debug/net7.0/ex_001.AssemblyInfoInputs.cache
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/Debug/net7.0/ex_001.AssemblyInfo.cs
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/Debug/net7.0/ex_001.csproj.CoreCompileInputs.cache
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/Debug/net7.0/ex_001.dll
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/Debug/net7.0/refint/ex_001.dll
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/Debug/net7.0/ex_001.pdb
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/Debug/net7.0/ex_001.genruntimeconfig.cache
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/Debug/net7.0/ref/ex_001.dll
