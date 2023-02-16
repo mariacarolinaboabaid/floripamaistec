@@ -7,7 +7,7 @@ List<int> numerosUser = new List<int> { };
 List<int> numerosPrimos = new List<int> { };
 
 // Loop para solicitar os números p/ o Usuário e adicionar à lista 'numerosUser'
-for (int i = 1; i <= 4; i++)
+for (int i = 1; i <= 10; i++)
 {
     Console.Write($"Digite o {i}º número: ");
     int numero = int.Parse(Console.ReadLine());
