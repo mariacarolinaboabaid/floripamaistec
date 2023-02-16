@@ -24,7 +24,7 @@ for (int i = 1; i <= 4; i++)
     }
 
     // Adicionando à lista de número primos, caso o número primo for 
-    if (divisores.Count() > 2)
+    if (divisores.Count() <= 2)
     {
         numerosPrimos.Add(numero);
     }
