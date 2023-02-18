@@ -2,7 +2,7 @@
 List<string> frutas = new List<string> { };
 
 // Pedindo os nomes das frutas para o Usuário
-for (int i = 1; i <= 3; i++)
+for (int i = 1; i <= 15; i++)
 {
     Console.Write($"Digite o nome da {i}ª fruta: ");
     string fruta = Console.ReadLine();

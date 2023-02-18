@@ -2,7 +2,7 @@
 Dictionary <string, int> alunosMedia = new Dictionary <string, int> ();
 
 // Pedindo os nomes e as médias dos alunos
-for (int i = 1; i <= 2; i++)
+for (int i = 1; i <= 5; i++)
 {
     Console.Write($"Digite o nome do(a) {i}º aluno(a): ");
     string aluno =  Console.ReadLine();
@@ -14,7 +14,7 @@ for (int i = 1; i <= 2; i++)
 // Verificando quais alunos foram aprovados ou reprovados
 foreach (string key in alunosMedia.Keys)
 {
-    if (alunosMedia[key] > 6)
+    if (alunosMedia[key] >= 6)
     {
         Console.WriteLine($"{key} ---- APROVADO(A)");
     }
