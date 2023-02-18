@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/ex_001.csproj",
-      "projectName": "ex_001",
-      "projectPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/ex_001.csproj",
+      "projectUniqueName": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_002/ex_002/ex_002.csproj",
+      "projectName": "ex_002",
+      "projectPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_002/ex_002/ex_002.csproj",
       "packagesPath": "/Users/mariacarolinaboabaid/.nuget/packages/",
-      "outputPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/",
+      "outputPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_002/ex_002/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mariacarolinaboabaid/.nuget/NuGet/NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/ex_001.csproj": {}
+    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana2/ex_003.ex_004.ex_005.ex_006/ex_003.ex_004.ex_005.ex_006/ex_003.ex_004.ex_005.ex_006.csproj": {}
   },
   "projects": {
-    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/ex_001.csproj": {
+    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana2/ex_003.ex_004.ex_005.ex_006/ex_003.ex_004.ex_005.ex_006/ex_003.ex_004.ex_005.ex_006.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/ex_001.csproj",
-        "projectName": "ex_001",
-        "projectPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/ex_001.csproj",
+        "projectUniqueName": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana2/ex_003.ex_004.ex_005.ex_006/ex_003.ex_004.ex_005.ex_006/ex_003.ex_004.ex_005.ex_006.csproj",
+        "projectName": "ex_003.ex_004.ex_005.ex_006",
+        "projectPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana2/ex_003.ex_004.ex_005.ex_006/ex_003.ex_004.ex_005.ex_006/ex_003.ex_004.ex_005.ex_006.csproj",
         "packagesPath": "/Users/mariacarolinaboabaid/.nuget/packages/",
-        "outputPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana3/ex_001/ex_001/obj/",
+        "outputPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana2/ex_003.ex_004.ex_005.ex_006/ex_003.ex_004.ex_005.ex_006/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mariacarolinaboabaid/.nuget/NuGet/NuGet.Config"
