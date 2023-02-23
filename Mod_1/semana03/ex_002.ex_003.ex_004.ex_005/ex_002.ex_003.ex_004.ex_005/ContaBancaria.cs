@@ -22,11 +22,12 @@ namespace ex_002.ex_003.ex_004.ex_005
             this.tipoConta = tipoConta;
         }
 
-        public ContaBancaria(string nomeTitular)
+        public ContaBancaria(string nomeTitular,  TipoConta tipoConta)
         {
             numero = 1111;
             agencia = 2222;
             this.nomeTitular = nomeTitular;
+            this.tipoConta = tipoConta;
         }
 
 

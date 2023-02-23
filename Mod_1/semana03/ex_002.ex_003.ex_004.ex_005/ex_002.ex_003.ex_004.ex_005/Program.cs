@@ -2,7 +2,7 @@
 
 ContaBancaria conta_01 = new ContaBancaria(909078, 30550, "Rodrigo Silva", TipoConta.CORRENTE);
 
-ContaBancaria conta_02 = new ContaBancaria("Karina Silva");
+ContaBancaria conta_02 = new ContaBancaria("Karina Silva", TipoConta.CORRENTE);
 
 conta_01.Deposito(150);
 conta_01.Transferencia(0, conta_02);
