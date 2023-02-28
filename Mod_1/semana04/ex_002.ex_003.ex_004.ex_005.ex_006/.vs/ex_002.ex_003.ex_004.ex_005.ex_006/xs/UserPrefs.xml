@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{51DCFF3A-67DB-4670-9B63-96422A630DC8}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ex__002.ex__003.ex__004.ex__005.ex__006 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ex_002.ex_003.ex_004.ex_005.ex_006/Classes/ContaCorrente.cs">
+    <Files>
+      <File FileName="ex_002.ex_003.ex_004.ex_005.ex_006/Program.cs" Line="20" Column="87" />
+      <File FileName="ex_002.ex_003.ex_004.ex_005.ex_006/Classes/Cliente.cs" Line="8" Column="28" />
+      <File FileName="ex_002.ex_003.ex_004.ex_005.ex_006/Classes/ContaBancaria.cs" Line="80" Column="9" />
+      <File FileName="ex_002.ex_003.ex_004.ex_005.ex_006/Classes/ContaPoupanca.cs" Line="13" Column="1" />
+      <File FileName="ex_002.ex_003.ex_004.ex_005.ex_006/Classes/ContaEmpresarial.cs" Line="21" Column="1" />
+      <File FileName="ex_002.ex_003.ex_004.ex_005.ex_006/Classes/ContaCorrente.cs" Line="11" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ex_002.ex_003.ex_004.ex_005.ex_006" expanded="True">
+            <Node name="ex_002.ex_003.ex_004.ex_005.ex_006" expanded="True">
+              <Node name="Classes" expanded="True">
+                <Node name="ContaCorrente.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
