@@ -19,9 +19,16 @@ namespace Escola.Repositories
             };
 
         // Método para listar alunos
-        public List<AlunoModel> ListarAlunos()
+        public List<AlunoModel> ListarAlunos(string filtroNome)
         {
-            return lista;
+            if(string.IsNullOrEmpty(filtroNome))
+            {
+                return lista;
+            }
+            else
+            {
+                return lista.Where(x => x.Nome.ToUpper().Contains(filtroNome.ToUpper())).ToList();
+            }
         }
 
     }
