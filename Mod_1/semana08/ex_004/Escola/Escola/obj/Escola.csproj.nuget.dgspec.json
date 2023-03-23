@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_002/Escola/Escola/Escola.csproj": {}
+    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_003/Escola/Escola/Escola.csproj": {}
   },
   "projects": {
-    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_002/Escola/Escola/Escola.csproj": {
+    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_003/Escola/Escola/Escola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_002/Escola/Escola/Escola.csproj",
+        "projectUniqueName": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_003/Escola/Escola/Escola.csproj",
         "projectName": "Escola",
-        "projectPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_002/Escola/Escola/Escola.csproj",
+        "projectPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_003/Escola/Escola/Escola.csproj",
         "packagesPath": "/Users/mariacarolinaboabaid/.nuget/packages/",
-        "outputPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_002/Escola/Escola/obj/",
+        "outputPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_003/Escola/Escola/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mariacarolinaboabaid/.nuget/NuGet/NuGet.Config"

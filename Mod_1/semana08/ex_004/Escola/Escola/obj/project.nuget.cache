@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YzQBEAsz/TD0b1wCYDStvknhBjlOUdZ7O6AmGK9KhpT/VWxZtyHABVG2j/OsJ3SyPdJJnzeyhYtKpziNP0V7zQ==",
+  "dgSpecHash": "Etx3bnsW3TNSn1bcckbs3OTliNzXy5wMNfcCsclyI6v90pxYHCgAU2dR5rUbfLok8jp2zqOOol/seRQSsvBksg==",
   "success": true,
-  "projectFilePath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_002/Escola/Escola/Escola.csproj",
+  "projectFilePath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_003/Escola/Escola/Escola.csproj",
   "expectedPackageFiles": [
     "/Users/mariacarolinaboabaid/.nuget/packages/microsoft.aspnetcore.openapi/7.0.4/microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",
     "/Users/mariacarolinaboabaid/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
