@@ -6,8 +6,8 @@
       <File FileName="Escola/Program.cs" />
       <File FileName="Escola/Models/BaseModel.cs" />
       <File FileName="Escola/Models/AlunoModel.cs" Line="8" Column="15" />
-      <File FileName="Escola/Repositories/AlunosRepository.cs" />
-      <File FileName="Escola/Controllers/AlunosController.cs" Line="13" Column="3" />
+      <File FileName="Escola/Repositories/AlunosRepository.cs" Line="22" Column="33" />
+      <File FileName="Escola/Controllers/AlunosController.cs" Line="20" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
