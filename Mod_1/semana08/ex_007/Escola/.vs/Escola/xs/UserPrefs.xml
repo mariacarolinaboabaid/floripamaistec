@@ -1,8 +1,12 @@
 ﻿<Properties StartupConfiguration="{C02FF4FC-40E4-4141-8EC4-9157C62A96C9}|https">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Escola/Controllers/AlunosControllers.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Escola/Models/AlunoModel.cs">
     <Files>
-      <File FileName="Escola/Controllers/AlunosControllers.cs" Line="16" Column="2" />
+      <File FileName="Escola/Properties/launchSettings.json" />
+      <File FileName="Escola/Program.cs" />
+      <File FileName="Escola/Models/BaseModel.cs" />
+      <File FileName="Escola/Models/AlunoModel.cs" Line="8" Column="15" />
+      <File FileName="Escola/Repositories/AlunosRepository.cs" Line="27" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,10 +14,9 @@
           <Node name="Escola" expanded="True">
             <Node name="Escola" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="AlunosControllers.cs" selected="True" />
+              <Node name="Models" expanded="True">
+                <Node name="AlunoModel.cs" selected="True" />
               </Node>
-              <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Repositories" expanded="True" />
             </Node>
