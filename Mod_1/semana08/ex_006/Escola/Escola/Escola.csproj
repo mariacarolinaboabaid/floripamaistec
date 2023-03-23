@@ -23,4 +23,7 @@
     <Folder Include="Models\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\AlunoController.cs" />
+  </ItemGroup>
 </Project>
