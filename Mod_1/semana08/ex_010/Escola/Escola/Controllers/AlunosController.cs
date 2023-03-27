@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Escola.Models;
 using Escola.Repositories;
+using Escola.Dto;
 
 namespace Escola.Controllers
 {
@@ -43,6 +44,16 @@ namespace Escola.Controllers
             }
             // Resposta Success 200
             return Ok(aluno);
+        }
+
+        // Método para criar uma disciplina
+        [HttpPost]
+        [Route("criar-aluno")]
+        public IActionResult CriarDisciplina([FromBody] CriacaoAlunoDto dto)
+        {
+            var repository = new AlunosRepository();
+            var aluno = repository.CriarAlunoRepository(dto);
+            return CreatedAtAction("ObterPorID", new { id = aluno.Id }, aluno);
         }
     }
 }

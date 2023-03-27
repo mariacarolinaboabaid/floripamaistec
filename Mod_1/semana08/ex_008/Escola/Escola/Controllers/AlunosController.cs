@@ -17,6 +17,10 @@ namespace Escola.Controllers
 		{
 			var repository = new AlunosRepository();
 			var alunos = repository.ListarAlunosRepository(nome);
+            if (alunos.Count() == 0)
+            {
+                return NotFound();
+            }
             return Ok(alunos);
 		}
 	}

@@ -6,14 +6,10 @@
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Escola PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Escola/Controllers/AlunosController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Escola/Repositories/AlunosRepository.cs">
     <Files>
-      <File FileName="Escola/Properties/launchSettings.json" />
-      <File FileName="Escola/Program.cs" />
-      <File FileName="Escola/Models/BaseModel.cs" />
-      <File FileName="Escola/Models/AlunoModel.cs" />
-      <File FileName="Escola/Repositories/AlunosRepository.cs" />
-      <File FileName="Escola/Controllers/AlunosController.cs" Line="23" Column="14" />
+      <File FileName="Escola/Repositories/AlunosRepository.cs" Line="50" Column="55" />
+      <File FileName="Escola/Controllers/AlunosController.cs" Line="15" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,12 +17,13 @@
           <Node name="Escola" expanded="True">
             <Node name="Escola" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="AlunosController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Dto" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Repositories" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="AlunosRepository.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
