@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{C02FF4FC-40E4-4141-8EC4-9157C62A96C9}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Escola PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Escola PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Escola/Repositories/AlunosRepository.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Escola/Controllers/AlunosController.cs">
     <Files>
-      <File FileName="Escola/Repositories/AlunosRepository.cs" Line="50" Column="55" />
+      <File FileName="Escola/Repositories/AlunosRepository.cs" Line="50" Column="54" />
       <File FileName="Escola/Controllers/AlunosController.cs" Line="15" Column="12" />
+      <File FileName="Escola/Dto/AlunoDto.cs" Line="12" Column="57" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,13 +17,13 @@
           <Node name="Escola" expanded="True">
             <Node name="Escola" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="AlunosController.cs" selected="True" />
+              </Node>
               <Node name="Dto" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Repositories" expanded="True">
-                <Node name="AlunosRepository.cs" selected="True" />
-              </Node>
+              <Node name="Repositories" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -33,4 +33,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
 </Properties>
