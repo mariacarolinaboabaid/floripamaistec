@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{C02FF4FC-40E4-4141-8EC4-9157C62A96C9}|https">
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Escola/Controllers/AlunosController.cs">
     <Files>
       <File FileName="Escola/Properties/launchSettings.json" />
       <File FileName="Escola/Program.cs" />
-      <File FileName="Escola/Models/BaseModel.cs" Line="1" Column="1" />
-      <File FileName="Escola/Models/AlunoModel.cs" Line="8" Column="15" />
-      <File FileName="Escola/Repositories/AlunosRepository.cs" Line="40" Column="9" />
-      <File FileName="Escola/Controllers/AlunosController.cs" Line="23" Column="8" />
+      <File FileName="Escola/Models/BaseModel.cs" />
+      <File FileName="Escola/Models/AlunoModel.cs" />
+      <File FileName="Escola/Repositories/AlunosRepository.cs" />
+      <File FileName="Escola/Controllers/AlunosController.cs" Line="41" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,15 +28,9 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Escola PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Escola PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

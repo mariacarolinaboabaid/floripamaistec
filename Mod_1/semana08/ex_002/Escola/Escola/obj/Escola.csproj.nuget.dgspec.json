@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana04/ex_002.ex_003.ex_004.ex_005.ex_006/ex_002.ex_003.ex_004.ex_005.ex_006/ex_002.ex_003.ex_004.ex_005.ex_006.csproj": {}
+    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_002/Escola/Escola/Escola.csproj": {}
   },
   "projects": {
-    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana04/ex_002.ex_003.ex_004.ex_005.ex_006/ex_002.ex_003.ex_004.ex_005.ex_006/ex_002.ex_003.ex_004.ex_005.ex_006.csproj": {
+    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_002/Escola/Escola/Escola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana04/ex_002.ex_003.ex_004.ex_005.ex_006/ex_002.ex_003.ex_004.ex_005.ex_006/ex_002.ex_003.ex_004.ex_005.ex_006.csproj",
-        "projectName": "ex_002.ex_003.ex_004.ex_005.ex_006",
-        "projectPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana04/ex_002.ex_003.ex_004.ex_005.ex_006/ex_002.ex_003.ex_004.ex_005.ex_006/ex_002.ex_003.ex_004.ex_005.ex_006.csproj",
+        "projectUniqueName": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_002/Escola/Escola/Escola.csproj",
+        "projectName": "Escola",
+        "projectPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_002/Escola/Escola/Escola.csproj",
         "packagesPath": "/Users/mariacarolinaboabaid/.nuget/packages/",
-        "outputPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana04/ex_002.ex_003.ex_004.ex_005.ex_006/ex_002.ex_003.ex_004.ex_005.ex_006/obj/",
+        "outputPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_1/semana08/ex_002/Escola/Escola/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mariacarolinaboabaid/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -49,6 +59,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
