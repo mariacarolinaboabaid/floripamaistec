@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{C162118A-4E3C-4C33-93A6-3743415CFD19}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ex_001/Program.cs">
+    <Files>
+      <File FileName="ex_001/Context/BercarioContext.cs" />
+      <File FileName="ex_001/Models/Bebe.cs" />
+      <File FileName="ex_001/Models/Configurations/BebeConfiguration.cs" />
+      <File FileName="ex_001/Models/Parto.cs" />
+      <File FileName="ex_001/Models/Configurations/MaeConfiguration.cs" />
+      <File FileName="ex_001/Models/Configurations/MedicoConfiguration.cs" />
+      <File FileName="ex_001/Models/Configurations/PartoConfiguration.cs" />
+      <File FileName="ex_001/Models/Mae.cs" />
+      <File FileName="ex_001/Models/Medico.cs" />
+      <File FileName="ex_001/Program.cs" Line="20" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ex_001" expanded="True">
+            <Node name="ex_001" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Context" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ex__001 FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{D2E7794C-5C44-413E-AAEC-7999A9B27FFA}|https">
+  <MonoDevelop.Ide.ItemProperties.ex__003 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ex_003/Models/Configurations/BebeConfiguration.cs">
+    <Files>
+      <File FileName="ex_003/Context/BercarioContext.cs" />
+      <File FileName="ex_003/Models/Mae.cs" />
+      <File FileName="ex_003/Models/Bebe.cs" />
+      <File FileName="ex_003/Models/Configurations/BebeConfiguration.cs" Line="14" Column="33" />
+      <File FileName="ex_003/Models/Configurations/PartoConfiguration.cs" />
+      <File FileName="ex_003/Models/Configurations/MaeConfiguration.cs" />
+      <File FileName="ex_003/Models/Configurations/MedicoConfiguration.cs" />
+      <File FileName="ex_003/Program.cs" />
+      <File FileName="ex_003/appsettings.json" />
+      <File FileName="ex_003/appsettings.Development.json" Line="14" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ex_003" expanded="True">
+            <Node name="ex_003" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Context" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Configurations" expanded="True">
+                  <Node name="BebeConfiguration.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
