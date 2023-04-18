@@ -1,14 +1,14 @@
 ﻿using System;
 namespace labSchool.Models
 {
-	// Classe Aluno herdando da classe Pessoa
-	public class Aluno : Pessoa
+    // CLASSE ALUNO COM HERANÇA DA CLASSE PESSOA
+    public class Aluno : Pessoa
 	{
 		public string SituacaoMatricula { get; set; }
 		public float NotaProcessoSeletivo { get; set; }
-		public int TotalAtendimentosPedagogicos { get; set; } 
+		public int TotalAtendimentosPedagogicos { get; set; }
 
-        // Met. para incrementar o total de atendimentos
+        // MET PARA INCREMENTER O NÚMERO DE ATENDIMENTOS
         public void AdicionarAtendimento()
         {
             TotalAtendimentosPedagogicos += 1;

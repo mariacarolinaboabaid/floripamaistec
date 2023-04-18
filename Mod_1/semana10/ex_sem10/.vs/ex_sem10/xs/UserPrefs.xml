@@ -1,17 +1,14 @@
 ﻿<Properties StartupConfiguration="{8A1C4D0A-4574-40ED-AD12-D6AD6096F828}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ex__sem10 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ex_sem10/Repositories/StudentDisciplineRepository.cs">
+  <MonoDevelop.Ide.ItemProperties.ex__sem10 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ex_sem10/Models/Student.cs">
     <Files>
-      <File FileName="ex_sem10/Controllers/StudentController.cs" Line="11" Column="52" />
-      <File FileName="ex_sem10/Program.cs" Line="15" Column="26" />
-      <File FileName="ex_sem10/Dto/StudentDisciplineDto.cs" Line="1" Column="1" />
-      <File FileName="ex_sem10/Controllers/StudentDisciplineController.cs" Line="98" Column="14" />
-      <File FileName="ex_sem10/Repositories/StudentDisciplineRepository.cs" Line="57" Column="1" />
+      <File FileName="ex_sem10/Controllers/StudentController.cs" Line="91" Column="48" />
+      <File FileName="ex_sem10/Controllers/StudentDisciplineController.cs" />
+      <File FileName="ex_sem10/Repositories/StudentDisciplineRepository.cs" />
+      <File FileName="ex_sem10/Repositories/Interfaces/IStudentRepository.cs" />
+      <File FileName="ex_sem10/Models/User.cs" Line="1" Column="1" />
+      <File FileName="ex_sem10/Models/Student.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,10 +18,11 @@
               <Node name="Context" expanded="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="Dto" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Student.cs" selected="True" />
+              </Node>
               <Node name="Repositories" expanded="True">
                 <Node name="Interfaces" expanded="True" />
-                <Node name="StudentDisciplineRepository.cs" selected="True" />
               </Node>
               <Node name="appsettings.json" expanded="True" />
             </Node>
@@ -34,4 +32,8 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

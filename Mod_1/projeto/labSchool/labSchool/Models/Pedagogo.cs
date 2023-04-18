@@ -1,12 +1,12 @@
 ﻿using System;
 namespace labSchool.Models
 {
-    // Classe Pedagogo herdando da classe Pessoa
+    // CLASSE PEDAGOGO COM HERANÇA DA CLASSE PESSOA
     public class Pedagogo : Pessoa
 	{
         public int TotalAtendimentosPedagogicos { get; set; } 
 
-        // Met. para incrementar o total de atendimentos
+        // MET PARA INCREMENTER O NÚMERO DE ATENDIMENTOS
         public void AdicionarAtendimento()
         {
             TotalAtendimentosPedagogicos += 1;

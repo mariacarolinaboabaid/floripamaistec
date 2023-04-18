@@ -2,8 +2,10 @@
 using labSchool.Dto;
 using labSchool.Models;
 using labSchool.Repositories.Interfaces;
-using labSchool.Repository;
+using labSchool.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using labSchool.Validators;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace labSchool.Controllers
@@ -12,8 +14,7 @@ namespace labSchool.Controllers
     [Route("[controller]")]
     public class AlunoController : ControllerBase
 	{
-
-        // Injeção de dependência do Repositório
+        // INJEÇÃO DE DEPENDÊNCIA DO REPOSITÓRIO
         private readonly IAlunoRepository _alunoRepository;
     
         public AlunoController(IAlunoRepository alunoRepository)
@@ -21,32 +22,131 @@ namespace labSchool.Controllers
             _alunoRepository  = alunoRepository;
         }
 
-
-
-        // RETORNA O OBJETO ALUNO PELO ID
-        public IActionResult ObterPorCodigo(int id)
+        // LISTAR ALUNOS COM PARÂMETRO SITUAÇÃO DA MATRÍCULA COMO OPCIONAL
+        [HttpGet]
+        [Route("api/alunos")]
+        public IActionResult Obter(string? situacao)
         {
+            // CASO O VALOR DA SITUAÇÃO SEJA NÃO VÁLIDO
+            if (!string.IsNullOrEmpty(situacao) && (situacao != "ATIVO" && situacao != "IRREGULAR" && situacao != "ATENDIMENTO"
+                && situacao != "ATENDIMENTO_PEDAGOGICO" && situacao != "INATIVO"))
+            {
+                return BadRequest("O valor do parâmetro informado não é válido." +
+                    " Os valores válidos são: 'ATIVO', 'IRREGULAR', 'ATENDIMENTO_PEDAGOGICO', 'INATIVO'.");
+            }
 
-            // Capturing the answer
-            var aluno = _alunoRepository.ObterPorCodigo(id);
-            // If the id is inexistent 
+            
+            var resposta = _alunoRepository.Obter(situacao);
 
-            return Ok(aluno);
+            // CASO NÃO TENHA NENHUM REGISTRO DE RETORNO DO BANCO DE DADOS
+            if (resposta.Count() == 0)
+            {
+                return NotFound("No banco de dados não há nenhum aluno com a situação de matrícula informada.");
+            }
+            else
+            {
+                List<AlunoSaidaDto> alunosDtoSaida = new List<AlunoSaidaDto>();
+                foreach (var aluno in resposta)
+                {
+                    var alunoSaida = new AlunoSaidaDto();
+                    alunoSaida.Codigo = aluno.Codigo;
+                    alunoSaida.Nome = aluno.Nome;
+                    alunoSaida.Telefone = aluno.Telefone;
+                    alunoSaida.DataNascimento = aluno.DataNascimento;
+                    alunoSaida.Cpf = aluno.Cpf;
+                    alunoSaida.SituacaoMatricula = aluno.SituacaoMatricula;
+                    alunoSaida.NotaProcessoSeletivo = aluno.NotaProcessoSeletivo;
+                    alunoSaida.TotalAtendimentosPedagogicos = aluno.TotalAtendimentosPedagogicos;
 
+                    alunosDtoSaida.Add(alunoSaida);
+                }
+                return Ok(alunosDtoSaida);
+            }  
         }
 
-            // ADICIONAR
+        // LISTAR ALUNO PELO CÓDIGO IDENTIFICADOR
+        [HttpGet]
+        [Route("api/alunos/{codigo}")]
+        public IActionResult ObterPorCodigo(int codigo)
+        {
+            var aluno = _alunoRepository.ObterPorCodigo(codigo);
+            if (aluno == null)
+            {
+                return NotFound("O CÓDIGO DO ALUNO informado não existe no banco de dados.");
+            }
+
+            // SAÍDA DTO
+            var alunoSaida = new AlunoSaidaDto();
+            alunoSaida.Codigo = aluno.Codigo;
+            alunoSaida.Nome = aluno.Nome;
+            alunoSaida.Telefone = aluno.Telefone;
+            alunoSaida.DataNascimento = aluno.DataNascimento;
+            alunoSaida.Cpf = aluno.Cpf;
+            alunoSaida.SituacaoMatricula = aluno.SituacaoMatricula;
+            alunoSaida.NotaProcessoSeletivo = aluno.NotaProcessoSeletivo;
+            alunoSaida.TotalAtendimentosPedagogicos = aluno.TotalAtendimentosPedagogicos;
+
+            return Ok(alunoSaida);
+        }
+
+        // EXCLUSÃO DE ALUNO PELO CÓDIGO IDENTIFICADOR
+        [HttpDelete]
+        [Route("api/alunos/{codigo}")]
+        public IActionResult Excluir(int codigo)
+        {
+            if (_alunoRepository.Delete(codigo))
+            {
+                return NoContent();
+            }
+            else
+            {
+                return NotFound("O CÓDIGO DO ALUNO informado não existe no banco de dados.");
+            }
+        }
+
+        // ATUALIZAÇÃO DA SITUAÇÃO DA MATRÍCULA DO ALUNO
+        [HttpPut]
+        [Route("api/alunos/{codigo}")]
+        public IActionResult Atualizar(int codigo, [FromBody] AlunoAtualizarSituacaoDto alunoDto)
+        {
+            var aluno = _alunoRepository.ObterPorCodigo(codigo);
+            
+            if (aluno == null)
+            {
+                return NotFound("O CÓDIGO DO ALUNO informado não existe no banco de dados.");
+            }
+
+            aluno.SituacaoMatricula = alunoDto.SituacaoMatricula;
+
+            var alunoValidator = new AlunoValidator();
+            var validatorResult = alunoValidator.Validate(aluno);
+
+            if (validatorResult.IsValid == false)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest, validatorResult.Errors);
+            }
+
+            _alunoRepository.Atualizar(aluno);
+
+            // SAÍDA DTO
+            var alunoSaida = new AlunoSaidaDto();
+            alunoSaida.Codigo = aluno.Codigo;
+            alunoSaida.Nome = aluno.Nome;
+            alunoSaida.Telefone = aluno.Telefone;
+            alunoSaida.DataNascimento = aluno.DataNascimento;
+            alunoSaida.Cpf = aluno.Cpf;
+            alunoSaida.SituacaoMatricula = aluno.SituacaoMatricula;
+            alunoSaida.NotaProcessoSeletivo = aluno.NotaProcessoSeletivo;
+            alunoSaida.TotalAtendimentosPedagogicos = aluno.TotalAtendimentosPedagogicos;
+
+            return Ok(alunoSaida);
+        }
+
+        // ADICIONAR
         [HttpPost]
         [Route("api/alunos")]
         public IActionResult Adicionar([FromBody] AlunoAdicionarDto alunoDto)
         {
-            // Verificando se os dados informados atendem os requisitos
-            if (ModelState.IsValid == false)
-            {
-                return StatusCode(StatusCodes.Status400BadRequest, ModelState);
-            }
-
-            // Se sim, criando a nova instância de aluno
             var aluno = new Aluno();
             aluno.Nome = alunoDto.Nome;
             aluno.Telefone = alunoDto.Telefone;
@@ -55,12 +155,23 @@ namespace labSchool.Controllers
             aluno.SituacaoMatricula = alunoDto.SituacaoMatricula;
             aluno.NotaProcessoSeletivo = alunoDto.NotaProcessoSeletivo;
 
-            // Commitando no BD
+            var alunoValidator = new AlunoValidator();
+            var validatorResult = alunoValidator.Validate(aluno);
+
+            if (validatorResult.IsValid == false)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest, validatorResult.Errors);
+            }
+
+            if (_alunoRepository.CPF_Unico(aluno.Cpf) == false)
+            {
+                return Conflict("O campo CPF informado já existe.");
+            }
+
             _alunoRepository.Adicionar(aluno);
 
-
-            // Saída DTO
-            var alunoCriado = new AlunoCriadoSaidaDto();
+            // SAÍDA DTO
+            var alunoCriado = new AlunoSaidaDto();
             alunoCriado.Codigo = aluno.Codigo;
             alunoCriado.Nome = aluno.Nome;
             alunoCriado.Telefone = aluno.Telefone;
@@ -70,8 +181,10 @@ namespace labSchool.Controllers
             alunoCriado.NotaProcessoSeletivo = aluno.NotaProcessoSeletivo;
             alunoCriado.TotalAtendimentosPedagogicos = aluno.TotalAtendimentosPedagogicos;
 
-            return CreatedAtAction(nameof(AlunoController.ObterPorCodigo), new { codigo = aluno.Codigo }, alunoCriado) ;
+           return CreatedAtAction(nameof(AlunoController.ObterPorCodigo), new { codigo = aluno.Codigo }, alunoCriado) ;
         }
     }
+
+   
 }
 

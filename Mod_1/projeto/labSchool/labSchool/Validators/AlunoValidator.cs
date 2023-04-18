@@ -9,12 +9,10 @@ namespace labSchool.Validators
 {
 	public class AlunoValidator : AbstractValidator<Aluno>
     {
-
-        private readonly LabSchoolContext _context;
-
-        public AlunoValidator(LabSchoolContext context)
+       
+        public AlunoValidator()
 		{
-            _context = context;
+            //_context = context;
 
 			RuleFor(x => x.Nome).NotEmpty()
 				.NotNull()
@@ -31,9 +29,7 @@ namespace labSchool.Validators
 
             RuleFor(x => x.Cpf).NotEmpty()
                 .NotNull()
-                .WithMessage("O campo CPF possui preenchimento obrigatório")
-                .Must(CPF_Unico)
-                .WithMessage("O valor informado no campo CPF já existe.");
+                .WithMessage("O campo CPF possui preenchimento obrigatório");
 
             RuleFor(x => x.SituacaoMatricula).NotEmpty()
                 .NotNull()
@@ -49,21 +45,15 @@ namespace labSchool.Validators
 
         }
 
-        // Verifica se há outro CPF de mesmo valor no banco de dados
-        private bool CPF_Unico(string valor_cpf)
-        {
-            return !_context.Alunos.Any(x => x.Cpf == valor_cpf);
-        }
-
-
-        // Verifica se a situação da matrícula está com os valores admitidos
+        
+        // VERIFICA SE A SITUAÇÃO DA MATRÍCULA ESTÁ COM VALORES ADMITIDOS
         private bool Valida_Situacao(string valor_situacao)
         {
             if (valor_situacao == "ATIVO" || valor_situacao == "IRREGULAR" || valor_situacao == "ATENDIMENTO"
                 || valor_situacao == "ATENDIMENTO_PEDAGOGICO" || valor_situacao == "INATIVO")
-                return false;
-            else
                 return true;
+            else
+                return false;
         }
     }
 }

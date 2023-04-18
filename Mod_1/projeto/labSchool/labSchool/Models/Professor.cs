@@ -1,12 +1,12 @@
 ﻿using System;
 namespace labSchool.Models
 {
-    // Classe Professor herdando da classe Pessoa
+    // CLASSE PROFESSOR COM HERANÇA DA CLASSE PESSOA
     public class Professor : Pessoa
 	{
 		public string FormacaoAcademica { get; set; }
 		public string Experiencia { get; set; }
-		public string Estado;
+		public string Estado { get; set; }
 	}
 }
 

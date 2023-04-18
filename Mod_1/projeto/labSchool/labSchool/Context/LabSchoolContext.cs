@@ -7,12 +7,12 @@ namespace labSchool.Context
 {
 	public class LabSchoolContext : DbContext
 	{
-		// Tabelas
+		// TABELAS
 		public DbSet<Aluno> Alunos { get; set; }
         public DbSet<Pedagogo> Pedagogos { get; set; }
         public DbSet<Professor> Professores { get; set; }
 
-        // Adicionando as configurations
+        // ADIÇÃO DAS CONFIGURATIONS
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new AlunoConfiguration());
@@ -20,7 +20,7 @@ namespace labSchool.Context
             modelBuilder.ApplyConfiguration(new ProfessorConfiguration());
         }
 
-        // Construtor
+        // CONSTRUTOR
         public LabSchoolContext(DbContextOptions<LabSchoolContext> options) : base(options)
         {
 
