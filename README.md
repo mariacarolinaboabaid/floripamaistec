@@ -1,6 +1,10 @@
 # floripamaistec
 
-:computer: Repositório com os códigos dos exercícios do Curso "Desenvolvimento FullStack" do Senai.
+:computer: 
+
+Repositório com os códigos dos exercícios do Curso "Desenvolvimento FullStack" do Senai.
 
 
-- MÓDULO 	:one:
+Módulo 	:one: Backend utilizando C# e banco de dados SQL.
+
+Módulo 	:two: Frontend utilizando HTML, CSS, JavaScript.
