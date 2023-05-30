@@ -1,0 +1,43 @@
+section#metodologia{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    background-color: #e3def8;
+    border-radius: 10px;
+    box-shadow: 1px 5px 6px #605C4E;
+}
+
+section#metodologia h2{
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+section#metodologia li{
+    padding: 0px 10px 5px 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+section#metodologia li p{
+    text-align: justify;
+    padding-right: 30px;
+    font-weight: 300;
+}
+
+@media (max-width: 870px) {
+    section#metodologia h2{
+        font-size: 13px;
+    }
+}
+@media (max-width: 902px) {
+    section#sobre{
+        flex-direction: column;
+        width: 94vw;
+    }
+}
+@media (max-width: 1080px) {
+    section#metodologia li{
+        font-size: 11px;
+    }
+} 

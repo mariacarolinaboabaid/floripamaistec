@@ -1,0 +1,64 @@
+section#depoimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 5px 6px #605C4E;
+}
+
+section#depoimentos h2{
+    font-size: 16px;
+    background-color: #e8fcd9;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    padding: 10px 0px 10px 0px; 
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid #aa96c5;
+}
+
+div#containerVideos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.videoDepoimento{
+    margin: 20px;
+    background-color: #736681;
+    
+    border-radius: 10px;
+}
+
+div.dadosDepoimento{
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (max-width: 779px) {
+    div#containerVideos{
+        flex-direction: column;
+    }
+    section#depoimentos{
+        width: 80vw;
+    }
+}
+@media (max-width: 870px) {
+    section#depoimentos h2{
+        font-size: 13px;
+    }
+    div.dadosDepoimento{
+        font-size: 10px;
+    }
+}
+@media (max-width: 1062px) {
+    iframe{
+        width: 200px;
+        height: 115px;
+    }
+}

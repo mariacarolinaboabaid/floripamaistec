@@ -1,0 +1,118 @@
+section#sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    background-color: white ;
+    border: 3px solid #b498ec;
+    border-radius: 10px;
+    box-shadow: 1px 5px 6px #605C4E;
+}
+
+div#estabelecimento, div#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+div#estabelecimento{
+    padding-right: 8px;
+    padding-top: 30px;
+}
+
+div#estabelecimento img {
+    height: 270px;
+    box-shadow: 1px 1px 4px #605C4E;   
+}
+
+div#estabelecimento p{
+    text-align: center;
+    font-size: 13px;
+    margin: 30px 10px 30px 10px; 
+    line-height: 1.2rem;
+}
+
+div#info{
+    border-left: 3px solid #aa96c5;
+    background-color: #e9f5cc;
+    padding: 30px 10px 30px 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+div#info img {
+    height: 90px; 
+}
+
+div#info section#alunos img {
+    margin-left: 26px;
+}
+
+div#info p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+div#info section#classes p {
+    margin-left: -20px;
+}
+
+@media (max-width: 430px) {
+    div#estabelecimento img {
+        width: 300px;
+    } 
+    div#estabelecimento h2{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 670px) {
+    div#estabelecimento h2{
+        font-size: 19px;
+    }   
+}
+
+@media (max-width: 892px) {
+    div#estabelecimento img {
+        height: 150px;
+    }  
+    div#estabelecimento p {
+        font-size: 11px;
+    }
+    div#info img{
+        height: 80px;
+    }   
+}
+
+@media (max-width: 902px) {
+    section#sobre{
+        flex-direction: column;
+        width: 94vw;
+    }
+    div#estabelecimento p{
+        text-align: center;
+        font-size: 12px;
+        margin: 30px -75px 30px -75px; 
+    }
+    div#info{
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border: 1px solid #aa96c5;
+        border-radius:10px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+
+    }
+    div#info p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1093px) {
+    div#estabelecimento img {
+        height: 240px;
+    } 
+}
