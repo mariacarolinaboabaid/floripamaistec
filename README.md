@@ -1,2 +1,6 @@
 # floripamaistec
-Repositório com todos os códigos dos exercícios do Curso "Desenvolvimento Full Stack" do Senai.
+
+:computer: Repositório com os códigos dos exercícios do Curso "Desenvolvimento FullStack" do Senai.
+
+
+- MÓDULO 	:one:
