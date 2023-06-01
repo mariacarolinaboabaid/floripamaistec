@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico IMC</title>
+</head>
+<body>
+    <main style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h1>Histórico</h1>
+        <div id="container" style="border: 1px solid black; width: 200px;">
+            
+        </div>
+    </main>
+
+    <script>
+        const container = document.getElementById("container")
+
+        document.body.onload = function load(){
+            const verificaStorage = localStorage.getItem("dadosIMC");
+
+            if (verificaStorage == null) {
+                const resposta = document.createElement("p")
+                resposta.style.textAlign = "center"
+                resposta.innerText = "Não há dados ainda."
+                container.append(resposta)
+
+            }
+            else {
+                const dados = JSON.parse(verificaStorage)
+                for (item in dados){
+                    const lista = document.createElement("ul")
+                    const li = document.createElement("li")
+                    li.innerText = dados[item]
+                    lista.append(li)
+                    container.append(lista)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
