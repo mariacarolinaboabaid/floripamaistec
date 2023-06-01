@@ -21,7 +21,7 @@ function calcularIMC(){
     else if (imc >= 25 && imc <= 39.9){
         classificacao = "Você está com obesidade grau 2"
     }
-    else {
+    else if (imc >= 40){
         classificacao = "Você está com obesidade grau 3"
     }
 

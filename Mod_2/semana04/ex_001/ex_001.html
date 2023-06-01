@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01 - Semana 04</title>
+</head>
+<body>
+    <main style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h1>Exercício 01 - Semana 04 </h1>
+        <form>
+            <label for="numero">Por gentileza, insira um número:</label>
+            <input id="numero" type="number">
+            <button id="botao" type="button">Enviar</button>
+        </form>
+        <p hidden id="resultado"></p>
+    </main>
+    <script>
+        let resultado = document.getElementById("resultado")
+        let botao = document.getElementById("botao")
+
+        botao.onclick = function(){
+            let numero = document.getElementById("numero").value
+            if (numero > 10){
+                
+                resultado.innerText = "O número inserido é maior que 10."
+            }
+            else{
+                resultado.innerText = "O número inserido é menor ou igual a 10."
+            }
+            resultado.hidden = false
+        }
+    </script>
+</body>
+</html>
