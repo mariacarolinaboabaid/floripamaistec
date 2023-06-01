@@ -1,0 +1,47 @@
+//
+<!-- Objetivo: Familiarizar-se com a manipulação de JSON e o uso do LocalStorage.
+
+// Instrução: Crie um objeto JavaScript simples e converta-o em uma string JSON usando JSON.stringify(). Em seguida, salve essa string JSON no LocalStorage e, depois após atualizar a página, recupere e converta-a de volta em um objeto JavaScript usando JSON.parse(). -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 04 - Exercício 05</title>
+</head>
+
+<body>
+    <h1>Recuperando os dados da LocalStorage</h1>
+    <p id="resultado"></p>
+    <button onclick="recuperarDados()">Recuperar dados</button>
+
+
+    <script>
+
+        let resultado =  document.getElementById("resultado")
+
+        const alunaObjeto = {
+            nome: "Maria Carolina",
+            idade: 25,
+            curso: "Desenvolvimento Full Stack"
+        }
+
+        const alunaString = JSON.stringify(alunaObjeto)
+        console.log(alunaString)
+
+        localStorage.setItem("alunaDados", alunaString)
+
+        function recuperarDados(){
+            let info  = localStorage.getItem("alunaDados")
+            let aluna =  JSON.parse(info)
+            for (dado in aluna){
+                resultado.innerText += dado + " : " + aluna[dado] + "\n"
+            }
+        }
+    </script>
+</body>
+
+</html>
