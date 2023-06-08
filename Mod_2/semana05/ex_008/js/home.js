@@ -38,20 +38,24 @@ const btnBuscar = document.getElementById("btnSearch")
 btnBuscar.onclick = function () {
 
     let cards = document.getElementsByClassName("card")
+   
+    for (var i = cards.length - 1; i >= 0; i--) {
+        let card = cards[i]
+        card.remove()
+    }
     console.log(cards)
 
     if (cards.length < 9){
         carregarCards()
     }
-   
+    
     let valorBuscar = document.getElementById("search").value.toUpperCase()
-
-    let match = []
 
     if (valorBuscar === ""){
        return alert("Busca vazia!")
     }
     else {
+        let match = []
         for (var i = cards.length - 1; i >= 0; i--) {
             console.log(i)
             let card = cards[i]
@@ -69,5 +73,6 @@ btnBuscar.onclick = function () {
         for (let item in match) {
             container.append(match[item])
         }
+
     }
 }
