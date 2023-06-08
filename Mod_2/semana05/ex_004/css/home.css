@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+}
+
+header{
+    background-color: #ffd41f;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #9c9994;   
+    box-shadow: 1px 1px 10px #9c9994;   
+}
+h1{
+    text-align: center;
+}
+
+#containerNav{
+    heigth: 500px;
+}
+
+nav {
+    width: 100px;
+    background-color: #1ec3ea;
+    padding: 20px 30px 629px 30px; 
+    border-right: 1px solid #9c9994; 
+}

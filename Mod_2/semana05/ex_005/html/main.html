@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Login</h1>
+
+        <form id="formLogin">
+
+            <div class="containerInputs">
+                <label for="user">Usuário</label>
+                <input id="user" name="user" type="email">
+            </div>
+
+            <div class="containerInputs">
+                <label for="password">Senha</label>
+                <input id="password" name="password" type="password">
+            </div>
+
+            <div id="containerButtons">
+                <button id="login" type="button">Entrar</button>
+                <button id="newAccount" type="button" onclick="window.location.href = 'cadastro.html';">Criar conta</button>
+                <button id="forgotPassword" type="button">Esqueci a senha</button>
+            </div>
+            
+        </form>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

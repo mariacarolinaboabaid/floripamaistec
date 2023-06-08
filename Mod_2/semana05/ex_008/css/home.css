@@ -1,0 +1,103 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+header{
+    background-color: #E1F25C;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #E1F25C;   
+    box-shadow: 1px 1px 10px #9c9994;   
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #9c9994;
+    padding: 20px 30px 675px 30px; 
+}
+
+form {
+    margin: 20px 0px 0px 10px;
+}
+
+input {
+    width: 30%;
+    border-radius: 7px;
+}
+
+#containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px 10px 15px;
+    box-shadow: 1px 1px 10px #9c9994; 
+    gap: 15px;  
+}
+
+.card img {
+    width: 70%;
+    box-shadow: 1px 1px 10px #9c9994; 
+    border-radius: 7px;
+}
+
+.card h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 837px) {
+    .card h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        padding: 20px;
+    }
+    .card {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1252px) {
+    .card img {
+        width: 90%;
+    }
+}
+
+
+
+
