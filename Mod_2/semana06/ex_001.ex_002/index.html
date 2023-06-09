@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 06 - Exercício 01 e 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Nomes Invertidos</h1>
+
+    <div id="container"></div>
+
+    <script>
+        let container = document.getElementById("container")
+
+        fetch("https://servicodados.ibge.gov.br/api/v1/censos/nomes/ranking")
+            .then(response => {
+                return response.json()
+            })
+            .then(result => {
+                for (let iterador = result.length - 1; iterador >= 0; iterador--) {
+            
+                    let pessoa = document.createElement("div")
+                    pessoa.classList.add("containerPessoa")
+                    
+                    for (let item in result[iterador]) {
+
+                        let dados = document.createElement("p")
+                        dados.innerText += `${item}: ${result[iterador][item]}`                     
+                        
+                        pessoa.append(dados)
+                        
+                    }
+                    container.append(pessoa)
+                }
+            })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 06 - Exercício 04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>NOMES QUE CONTÉM 'A'</h1>
+
+
+    <script type="module">
+        import {gettingNames} from './script.js';
+
+        window.onload = document.body.append(gettingNames("https://servicodados.ibge.gov.br/api/v1/censos/nomes/ranking"))
+
+    </script>
+</body>
+
+</html>
