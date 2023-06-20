@@ -7,6 +7,7 @@ export function gettingNames(url) {
             return response.json()
         })
         .then(result => {
+            console.log(result)
             // Array de nomes
             let nomes = []
             let nomesPequenos;

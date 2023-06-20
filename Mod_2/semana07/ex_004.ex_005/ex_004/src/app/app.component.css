@@ -1,0 +1,16 @@
+body {
+    padding: 20px 50px;
+    background-color: #839cb5;
+    color: #031c30;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+div, button {
+    margin: 10px;
+}
+
+

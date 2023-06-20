@@ -1,0 +1,43 @@
+<body>
+  <h1>CACULADORA</h1>
+  <form (ngSubmit)="calcular()">
+
+    <div>
+      <label for="primeiroNumeroInput">Primeiro número</label>
+
+      <input type="text" 
+      name="primeiroNumeroInput" 
+      id="primeiroNumeroInput" 
+      [(ngModel)]="primeiroNumero"
+      required>
+    </div>
+
+    <div>
+      <label for="segundoNumeroInput">Segundo número</label>
+
+      <input type="text" 
+      name="segundoNumeroInput" 
+      id="segundoNumeroInput" 
+      [(ngModel)]="segundoNumero"
+      required>
+    </div>
+
+    <div>
+      <label for="operacoes">Operação</label>
+
+      <select name="operacoes"  id="operacoes" [(ngModel)]="operacoes">
+        <option value="somar">Somar</option>
+        <option value="subtrair">Subtrair</option>
+        <option value="multiplicar">Multiplicar</option>
+        <option value="dividir">Dividir</option>  
+      </select>
+    </div>
+    <div id="containerBtn">
+      <button type="submit">Calcular</button>
+      <button type="button" (click)="limpar()">Limpar</button>
+    </div>
+  </form>
+
+  <p id="result" [hidden]="hidden">Resultado é {{resultado}}.</p>
+
+</body>

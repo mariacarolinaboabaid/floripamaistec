@@ -1,0 +1,31 @@
+<body>
+  <h1>Formulário de Avaliação de Filme</h1>
+
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
+    <div>
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" formControlName="nome">
+    </div>
+
+    <div>
+      <label for="email">E-mail</label>
+      <input type="text" name="email" id="email" formControlName="email">
+    </div>
+
+    <div>
+      <label for="nomeFilme">Filme</label>
+      <input type="text" name="nomeFilme" id="nomeFilme" formControlName="nomeFilme">
+    </div>
+
+    <div>
+      <label for="avaliacao">Avaliação</label>
+      <input type="text" name="avaliacao" id="avaliacao" formControlName="avaliacao">
+    </div>
+
+    <button type="submit">Enviar</button>
+    <button (onclick)="cancelar()">Cancelar</button>
+  </form>
+
+  <p [hidden]="hidden" [innerHTML]="message"></p>
+</body>
