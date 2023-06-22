@@ -23,8 +23,8 @@
       <input type="text" name="avaliacao" id="avaliacao" formControlName="avaliacao">
     </div>
 
-    <button type="submit">Enviar</button>
-    <button (onclick)="cancelar()">Cancelar</button>
+    <button type="submit" [disabled]="formulario.invalid">Enviar</button>
+    <button type="button" (click)="cancelar()">Cancelar</button>
   </form>
 
   <p [hidden]="hidden" [innerHTML]="message"></p>

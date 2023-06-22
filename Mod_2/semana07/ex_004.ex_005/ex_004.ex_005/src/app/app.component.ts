@@ -17,7 +17,7 @@ export class AppComponent {
       'nome': new FormControl('', [Validators.required, Validators.minLength(3)]),
       'email': new FormControl('', [Validators.required, Validators.email]),
       'nomeFilme': new FormControl('', [Validators.required, Validators.minLength(3)]),
-      'avaliacao': new FormControl('', Validators.required),
+      'avaliacao': new FormControl('', [Validators.required, Validators.min(0), Validators.max(10)]),
     })
   }
 
@@ -29,9 +29,9 @@ export class AppComponent {
   }
 
   cancelar() {
-    this.formulario.get('nome')?.setValue("")
-    this.formulario.get('email')?.setValue("")
-    this.formulario.get('nomeFilme')?.setValue("")
-    this.formulario.get('avaliacao')?.setValue("")
+    this.formulario.get('nome')?.reset()
+    this.formulario.get('email')?.reset()
+    this.formulario.get('nomeFilme')?.reset()
+    this.formulario.get('avaliacao')?.reset()
   }
 }

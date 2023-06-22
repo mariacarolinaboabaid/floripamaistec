@@ -1,0 +1,31 @@
+<body>
+  <h1>Bem-Vindo(a)!</h1>
+  <p>Para obter a lista completa dos filmes, clique no botão abaixo!</p>
+  <button (click)="buscarFilmes()">Buscar filmes</button>
+  <br>
+  <button (click)="filmeBemAvaliado()">Filme mais bem avaliado</button>
+  <br>
+  <button (click)="proximo()">Próximo</button>
+  <br>
+  <button (click)="anterior()">Anterior</button>
+  <p *ngIf="carregando">Carregando os filmes...</p>
+
+  <div *ngIf="filmes.length > 0">
+    <!-- Se tiver alunos cadastrados -->
+    <div *ngFor="let filme of filmes; index as indice">
+      <div class="filmesContainer">
+        <p>{{indice + 1 }}</p>
+        <p>{{filme.nomeFilme}}</p>
+        <p>{{filme.genero}}</p>
+        <p>{{filme.anoLancamento}}</p>
+        <p>{{filme.diretor}}</p>
+        <p>{{filme.duracaoMinutos}}</p>
+        <p>{{filme.nota}}</p>
+      </div>
+    </div>
+    <!-- Se não tiver alunos cadastrados -->
+    <p *ngIf="filmes.length ==  0">Não há filmes cadastrados.</p>
+  </div>
+
+<p>{{filmeAtual?.nomeFilme}}</p>
+</body>
