@@ -1,0 +1,49 @@
+.list-group {
+    margin-top: 30px;
+    width: 50%;
+}
+
+.list-group-item {
+    font-size: 14px;
+
+}
+
+#containerNotifications {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#notification {
+    box-shadow: 1px 1px 10px black;
+}
+
+button {
+    background-color: #e1f5c4;
+    height: 30px;
+    border-radius: 0px 0px 6px 6px;
+    border: none;
+    font-size: 13px;
+}
+
+button:hover{
+    font-weight: bold;
+}
+
+#ctnTitleDate{
+    display: flex;
+    justify-content: space-between;
+
+    #title {
+        font-weight: bold;
+    }
+}
+
+.green {
+    background-color: #aedd2b;
+}
+
+.red {
+    background-color: #e30224;
+}
+

@@ -1,0 +1,14 @@
+<div id="containerNotifications" *ngFor="let notification of notifications">
+    <div id="notification" class="list-group">
+        
+        <div id="ctnTitleDate" class="list-group-item" [ngClass]="notification.read ? 'green' : 'red'">
+            <span id="title" >{{notification.title}}</span>
+            <span id="date">{{notification.date}}</span>
+        </div>
+
+        <span class="list-group-item">{{notification.subtitle}}</span>
+        <button type="button" (click)="readNotification(notification)" [disabled]="notification.read">Read</button>
+       
+    </div>
+   
+</div>
