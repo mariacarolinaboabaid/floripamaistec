@@ -1,0 +1,20 @@
+nav {
+    margin: 0px;
+    background-color: #4180ab;
+    padding: 5px;
+    box-shadow: 1px 1px 10px #4b4b55;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+}
+
