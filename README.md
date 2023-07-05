@@ -5,4 +5,4 @@
 
 Módulo 	:one: :  Backend utilizando C# e banco de dados SQLite 
 
-Módulo 	:two: :  Frontend utilizando HTML, CSS e JavaScript.
+Módulo 	:two: :  Frontend utilizando HTML, CSS, JavaScript, Bootstrap e Angular.
