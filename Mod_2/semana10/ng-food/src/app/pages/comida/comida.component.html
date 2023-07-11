@@ -1,0 +1,17 @@
+<div class="container my-5">
+    <h1>Comidas</h1>
+    <div class="row d-flex">
+        <ng-container *ngFor="let comida of comidaLista">
+            <div  class="col-12 col-md-4 col-lg-4 col-xl-3">
+                <div class="card mb-3 col p-0">
+                    <img [src]="comida.urlImagem" class="card-img-top" alt="Imagem do produto" />
+                    <div class="card-body">
+                        <h5 class="card-title">{{comida.titulo}}</h5>
+                        <p class="card-text">R$ {{comida.valor}}</p>
+                        <a href="#" class="btn btn-primary">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

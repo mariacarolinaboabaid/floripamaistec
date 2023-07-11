@@ -1,0 +1,56 @@
+{
+    "comidas": [
+        {
+            "titulo": "Hamburguer Delícia",
+            "valor": 45.9,
+            "urlImagem": "../../../assets/burguer.jpg"
+        },
+        {
+            "titulo": "Risoto 1000 Maravilhas",
+            "valor": 60,
+            "urlImagem": "../../../assets/risoto.jpg"
+        },
+        {
+            "titulo": "Yakisoba Tudo de Bom",
+            "valor": 30.9,
+            "urlImagem": "../../../assets/yakisoba.jpg"
+        },
+        {
+            "titulo": "Pizza Direto da Itália",
+            "valor": 24.95,
+            "urlImagem": "../../../assets/pizza.jpg"
+        },
+        {
+            "titulo": "A Melhor Torta",
+            "valor": 15,
+            "urlImagem": "../../../assets/torta.jpg"
+        }
+    ],
+    "bebidas": [
+        {
+            "titulo": "Vinho Delícia",
+            "valor": 45.9,
+            "urlImagem": "../../../assets/vinho.jpg"
+        },
+        {
+            "titulo": "Suco de Uva 1000 Maravilhas",
+            "valor": 60,
+            "urlImagem": "../../../assets/vinho.jpg"
+        },
+        {
+            "titulo": "Suco de Laranja Tudo de Bom",
+            "valor": 30.9,
+            "urlImagem": "../../../assets/vinho.jpg"
+        },
+        {
+            "titulo": "Vinho Direto da Itália",
+            "valor": 24.95,
+            "urlImagem": "../../../assets/vinho.jpg"
+        },
+        {
+            "titulo": "O Melhor Gin",
+            "valor": 15,
+            "urlImagem": "../../../assets/vinho.jpg"
+        }
+    ]
+}

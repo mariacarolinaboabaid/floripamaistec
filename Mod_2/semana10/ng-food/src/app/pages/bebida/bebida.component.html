@@ -1,0 +1,15 @@
+<div class="container my-5">
+    <h1>Bebidas</h1>
+    <div class="row d-flex">
+        <div *ngFor="let bebida of bebidaLista" class="col-12 col-md-4 col-lg-4 col-xl-3">
+            <div class="card mb-3 col p-0">
+                <img [src]="bebida.urlImagem" class="card-img-top" alt="Imagem do produto" />
+                <div class="card-body">
+                    <h5 class="card-title">{{bebida.titulo}}</h5>
+                    <p class="card-text">R$ {{bebida.valor}}</p>
+                    <a href="#" class="btn btn-primary">Adicionar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
