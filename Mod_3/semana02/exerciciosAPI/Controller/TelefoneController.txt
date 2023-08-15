@@ -1,0 +1,178 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Threading.Tasks;
+using AutoMapper;
+using exerciciosAPI.Context;
+using exerciciosAPI.DTO.Telefone;
+using exerciciosAPI.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace exerciciosAPI.Controller
+{
+    [ApiController]
+    [Route("api/controller")]
+    public class TelefoneController : ControllerBase
+    {
+        private readonly ILogger<FichaController> _logger;
+        private readonly FichaContext _fichaContext;
+        private readonly IMapper _mapper;
+
+
+        public TelefoneController(ILogger<FichaController> logger, FichaContext fichaContext, IMapper mapper)
+        {
+            _logger = logger;
+            _fichaContext = fichaContext;
+            _mapper = mapper;
+        }
+        
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status409Conflict)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<TelefoneReadDTO> Post([FromBody] TelefoneCreateDTO telefoneCreateDTO)
+        {
+            try
+            {
+                var newTelefoneModel = _mapper.Map<TelefoneModel>(telefoneCreateDTO);
+
+                if (_fichaContext.TelefoneModels.ToList().Exists(e=>e.DDD == telefoneCreateDTO.DDD && e.Numero == telefoneCreateDTO.Numero))
+                {
+                    return Conflict(new { erro = "DDD e número telefônico já cadastrados" });
+                }
+
+                _fichaContext.TelefoneModels.Add(newTelefoneModel);
+                _fichaContext.SaveChanges();
+
+
+                var newTelefoneReadDTO = _mapper.Map<TelefoneReadDTO>(newTelefoneModel);
+
+                return StatusCode(HttpStatusCode.Created.GetHashCode(), newTelefoneReadDTO);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(HttpStatusCode.InternalServerError.GetHashCode(), ex);
+            }
+
+        }
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<IEnumerable<TelefoneReadDTO>> Get([FromQuery] string? email)
+        {
+            try
+            {
+                List<FichaModel> fichaModels;
+
+                if (email.IsNullOrEmpty())
+                {
+                    fichaModels = _fichaContext.FichaModels
+                                                         .Include(i => i.Detalhes)
+                                                         .ToList();
+                }
+                else
+                {
+                    fichaModels = _fichaContext.FichaModels
+                                                         .Where(w => w.Email.Equals(email!))
+                                                         .Include(i => i.Detalhes).ToList();
+                }
+
+                var fichaReadDTO = _mapper.Map<List<FichaReadDTO>>(fichaModels);
+                return Ok(fichaReadDTO);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex);
+            }
+        }
+
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<FichaReadDTO> Get(int id)
+        {
+            try
+            {
+                var fichaModel = _fichaContext.FichaModels.Find(id);
+
+                if (fichaModel == null)
+                {
+                    return NotFound(new { erro = "Ficha n�o encontrada" });
+                }
+
+                var fichaReadDTO = _mapper.Map<FichaReadDTO>(fichaModel);
+                return Ok(fichaReadDTO);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(HttpStatusCode.InternalServerError.GetHashCode(), ex);
+            }
+        }
+
+
+        [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<FichaReadDTO> Put(int id, [FromBody] FichaUpdateDTO fichaUpdateDTO)
+        {
+            try
+            {
+                var fichaModel = _fichaContext.FichaModels.Where(w => w.Id == id).FirstOrDefault();
+
+                if (fichaModel == null)
+                {
+                    return NotFound(new { erro = "Registro n�o encontrado" });
+                }
+
+                fichaModel = _mapper.Map(fichaUpdateDTO, fichaModel);
+
+                _fichaContext.FichaModels.Update(fichaModel);
+                _fichaContext.SaveChanges();
+                var fichaReadDTO = _mapper.Map<FichaReadDTO>(fichaModel);
+
+                return Ok(fichaReadDTO);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult Delete(int id)
+        {
+            try
+            {
+                var fichaModel = _fichaContext.FichaModels.Where(w => w.Id == id).FirstOrDefault();
+
+                if (fichaModel == null)
+                {
+                    return NotFound(new { erro = "Registro n�o encontrado" });
+                }
+
+                if (fichaModel.Detalhes != null && fichaModel.Detalhes!.Count > 0)
+                {
+                    return NotFound(new { erro = "Existe Detalhes relacionados com a ficha" });
+                }
+
+                _fichaContext.FichaModels.Remove(fichaModel);
+                _fichaContext.SaveChanges();
+
+                return StatusCode(200);
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex);
+            }
+        }
+
+    }
+}
