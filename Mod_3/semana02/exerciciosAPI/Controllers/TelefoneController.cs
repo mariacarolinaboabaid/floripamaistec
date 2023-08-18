@@ -8,6 +8,7 @@ using exerciciosAPI.Context;
 using exerciciosAPI.DTO.Telefone;
 using exerciciosAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace exerciciosAPI.Controller
 {
@@ -36,11 +37,11 @@ namespace exerciciosAPI.Controller
 
                 if (string.IsNullOrEmpty(ddd))
                 {
-                    listaTelefones = _fichaContext.TelefoneModels.ToList();
+                    listaTelefones = _fichaContext.TelefoneModels.Include(item => item.Ficha).ToList();
                 }
                 else
                 {
-                    listaTelefones = _fichaContext.TelefoneModels.Where(item => item.DDD.Equals(ddd)).ToList();
+                    listaTelefones = _fichaContext.TelefoneModels.Where(item => item.DDD.Equals(ddd)).Include(item => item.Ficha).ToList();
                 }
 
                 if (listaTelefones.Count() == 0)
@@ -83,7 +84,7 @@ namespace exerciciosAPI.Controller
         [HttpPost]
         public ActionResult<TelefoneReadDTO> Post([FromBody] TelefoneCreateDTO telefoneCreateDTO)
         {
-            try 
+            try
             {
                 if (_fichaContext.TelefoneModels.ToList().Exists(item => item.DDD == telefoneCreateDTO.DDD && item.Numero == telefoneCreateDTO.Numero))
                 {
@@ -103,12 +104,12 @@ namespace exerciciosAPI.Controller
             {
                 return StatusCode(500, ex);
             }
-        }    
+        }
 
         [HttpPut]
         public ActionResult<TelefoneReadDTO> Put(int id, [FromBody] TelefoneUpdateDTO telefoneUpdateDTO)
         {
-            try 
+            try
             {
                 var telefoneAtualizado = _fichaContext.TelefoneModels.Where(item => item.Id == id).FirstOrDefault();
 
@@ -120,20 +121,20 @@ namespace exerciciosAPI.Controller
                 telefoneAtualizado = _mapper.Map(telefoneUpdateDTO, telefoneAtualizado);
                 _fichaContext.TelefoneModels.Update(telefoneAtualizado);
                 _fichaContext.SaveChanges();
-                
+
                 var telefoneAtualizadoRead = _mapper.Map<TelefoneReadDTO>(telefoneAtualizado);
                 return Ok(telefoneAtualizadoRead);
             }
             catch (Exception ex)
             {
                 return StatusCode(500, ex);
-            }           
+            }
         }
 
         [HttpDelete]
-        public ActionResult Delete (int id)
+        public ActionResult Delete(int id)
         {
-             try
+            try
             {
                 var telefone = _fichaContext.TelefoneModels.Find(id);
 
