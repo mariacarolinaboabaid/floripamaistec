@@ -13,14 +13,18 @@ namespace exerciciosAPI.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required]
-        public int DDD { get; set; }
+        [Column(TypeName = "VARCHAR"), Required, StringLength(3)]
+        public string DDD { get; set; }
 
-        [Required]
-        public int Numero { get; set; }
+        [Column(TypeName = "VARCHAR"), Required, StringLength(9)]
+        public string Numero { get; set; }
 
         [Required]
         public bool Ativo { get; set; }
+
+        // Foreign key
+        [Required]
+        public int FichaId { get; set; }
 
         // Relacionamento com FichaModel
         public virtual FichaModel Ficha { get; set; }

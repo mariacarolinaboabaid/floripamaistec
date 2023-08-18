@@ -25,5 +25,7 @@ namespace exerciciosAPI.Models
 
         // Relacionamento com TelefoneModel
         public virtual IList<TelefoneModel> Telefones { get; set; }
+
+       
     }
 }

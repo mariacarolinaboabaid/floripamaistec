@@ -11,11 +11,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // String de conexão BD
-string connectionString = "Server=172.18.0.2.database.windows.net,1433;Initial Catalog=FichaCadastro;Persist Security Info=False;User Id=sa;Password=Passw@rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-
+string connectionString = "Data Source=/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana02/fichaCadastro.db;";
 
 // Injeção de dependência do contexto 
-builder.Services.AddDbContext<FichaContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<FichaContext>(options => options.UseSqlite(connectionString));
 
 // Configuração do automapper
 builder.Services.AddAutoMapper(typeof(Program));

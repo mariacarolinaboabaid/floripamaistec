@@ -1,19 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 using exerciciosAPI.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+
 
 namespace exerciciosAPI.Context
 {
     public class FichaContext : DbContext
     {
-
+        
         public FichaContext(DbContextOptions options) : base(options)
-        { }
+        { 
+            // SQLitePCL.Batteries.Init();
+        }
 
         public DbSet<FichaModel> FichaModels { get; set; }
         public DbSet<DetalheModel> DetalheModels { get; set; }
@@ -33,6 +30,31 @@ namespace exerciciosAPI.Context
                         .WithOne(y => y.Ficha)
                         .Metadata
                         .DeleteBehavior =  DeleteBehavior.Restrict;
+            
+            modelBuilder.Entity<DetalheModel>()
+                        .Property(p => p.DataCadastro)
+                        .HasDefaultValue(DateTime.Now);
+
+            modelBuilder.Entity<FichaModel>()
+                        .Property(p => p.DataCadastro)
+                        .HasDefaultValue(DateTime.Now);
+
+            modelBuilder.Entity<FichaModel>()
+                        .HasData(
+                            new FichaModel{Id = 1, Nome = "Maria Boabaid", Email = "carolkboabaid@gmail.com", DataNascimento = new DateTime(1997, 10, 14)},
+                            new FichaModel{Id = 2, Nome = "Alexandre Nolla", Email = "alexandrenolla@gmail.com", DataNascimento = new DateTime(1995, 10, 14)});
+
+            modelBuilder.Entity<DetalheModel>()
+                        .HasData(
+                            new DetalheModel{Id = 1, FeedBack = "Maravilhoso", Nota = Enum.EnumNota.Cinco, Ativo = true, FichaId = 1 },
+                            new DetalheModel{Id = 2, FeedBack = "Ótimo!", Nota = Enum.EnumNota.Quatro, Ativo = true , FichaId = 2}
+                        );
+
+            modelBuilder.Entity<TelefoneModel>()
+                        .HasData(
+                            new TelefoneModel{Id = 1, DDD = "048", Numero = "999337729", Ativo = true, FichaId = 1},
+                            new TelefoneModel{Id = 2, DDD = "048", Numero = "999448899", Ativo = true, FichaId = 2}
+                        );
 
             base.OnModelCreating(modelBuilder);       
         }

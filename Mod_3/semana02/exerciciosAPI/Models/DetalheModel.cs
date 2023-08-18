@@ -20,6 +20,10 @@ namespace exerciciosAPI.Models
         [Required]
         public bool Ativo { get; set; }
 
+        // Foreign key
+        [Required]
+        public int FichaId { get; set; }
+
         // Relacionamento com FichaModel
         public virtual FichaModel Ficha { get; set;}
     }

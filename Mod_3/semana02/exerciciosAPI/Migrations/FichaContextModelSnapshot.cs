@@ -2,7 +2,6 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using exerciciosAPI.Context;
 
@@ -16,25 +15,21 @@ namespace exerciciosAPI.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.9")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
-
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+            modelBuilder.HasAnnotation("ProductVersion", "7.0.9");
 
             modelBuilder.Entity("exerciciosAPI.Models.DetalheModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("INTEGER");
 
                     b.Property<bool>("Ativo")
-                        .HasColumnType("bit");
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("DataCadastro")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT")
+                        .HasDefaultValue(new DateTime(2023, 8, 17, 17, 13, 26, 860, DateTimeKind.Local).AddTicks(5680));
 
                     b.Property<string>("FeedBack")
                         .IsRequired()
@@ -42,31 +37,51 @@ namespace exerciciosAPI.Migrations
                         .HasColumnType("VARCHAR");
 
                     b.Property<int>("FichaId")
-                        .HasColumnType("int");
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("Nota")
-                        .HasColumnType("int");
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
                     b.HasIndex("FichaId");
 
                     b.ToTable("DetalheModels");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Ativo = true,
+                            DataCadastro = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FeedBack = "Maravilhoso",
+                            FichaId = 1,
+                            Nota = 5
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Ativo = true,
+                            DataCadastro = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FeedBack = "Ótimo!",
+                            FichaId = 2,
+                            Nota = 4
+                        });
                 });
 
             modelBuilder.Entity("exerciciosAPI.Models.FichaModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("DataCadastro")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT")
+                        .HasDefaultValue(new DateTime(2023, 8, 17, 17, 13, 26, 860, DateTimeKind.Local).AddTicks(5880));
 
                     b.Property<DateTime>("DataNascimento")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -81,33 +96,71 @@ namespace exerciciosAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("FichaModels");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DataCadastro = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DataNascimento = new DateTime(1997, 10, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "carolkboabaid@gmail.com",
+                            Nome = "Maria Boabaid"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DataCadastro = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DataNascimento = new DateTime(1995, 10, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "alexandrenolla@gmail.com",
+                            Nome = "Alexandre Nolla"
+                        });
                 });
 
             modelBuilder.Entity("exerciciosAPI.Models.TelefoneModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("INTEGER");
 
                     b.Property<bool>("Ativo")
-                        .HasColumnType("bit");
+                        .HasColumnType("INTEGER");
 
-                    b.Property<int>("DDD")
-                        .HasColumnType("int");
+                    b.Property<string>("DDD")
+                        .IsRequired()
+                        .HasMaxLength(3)
+                        .HasColumnType("VARCHAR");
 
                     b.Property<int>("FichaId")
-                        .HasColumnType("int");
+                        .HasColumnType("INTEGER");
 
-                    b.Property<int>("Numero")
-                        .HasColumnType("int");
+                    b.Property<string>("Numero")
+                        .IsRequired()
+                        .HasMaxLength(9)
+                        .HasColumnType("VARCHAR");
 
                     b.HasKey("Id");
 
                     b.HasIndex("FichaId");
 
                     b.ToTable("TelefoneModels");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Ativo = true,
+                            DDD = "048",
+                            FichaId = 1,
+                            Numero = "999337729"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Ativo = true,
+                            DDD = "048",
+                            FichaId = 2,
+                            Numero = "999448899"
+                        });
                 });
 
             modelBuilder.Entity("exerciciosAPI.Models.DetalheModel", b =>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using exerciciosAPI.DTO.Ficha;
+using exerciciosAPI.DTO.Telefone;
 using exerciciosAPI.Models;
 
 namespace exerciciosAPI.AutoMapper
@@ -25,6 +26,17 @@ namespace exerciciosAPI.AutoMapper
                 CreateMap<FichaUpdateDTO, FichaModel>();
 
                 CreateMap<DetalheModel, FichaDetalheReadDTO>();
+
+                CreateMap<TelefoneCreateDTO, TelefoneModel>();
+
+                CreateMap<TelefoneModel, TelefoneReadDTO>()
+                    .ForMember(destino => destino.Contato, origem => origem.MapFrom(origem => origem.DDD + origem.Numero))
+                    .ForMember(destino => destino.FichaTelefone, origem => origem.MapFrom(src => src.Ficha));
+                    
+                CreateMap<FichaModel, FichaTelefoneReadDTO>();
+                
+                CreateMap<TelefoneUpdateDTO, TelefoneModel>();
+
             }
         }
     }

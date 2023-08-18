@@ -22,6 +22,6 @@ namespace exerciciosAPI.DTO.Ficha
     {
         public EnumNota Nota { get; set; }
         
-        public string Justificativa { get; set; }
+        public string Feedback { get; set; }
     }
 }
