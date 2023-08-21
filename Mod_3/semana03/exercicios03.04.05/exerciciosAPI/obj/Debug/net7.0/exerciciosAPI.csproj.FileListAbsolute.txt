@@ -140,3 +140,4 @@
 /Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana03/exercicios03.04.05/exerciciosAPI/obj/Debug/net7.0/exerciciosAPI.pdb
 /Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana03/exercicios03.04.05/exerciciosAPI/obj/Debug/net7.0/exerciciosAPI.genruntimeconfig.cache
 /Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana03/exercicios03.04.05/exerciciosAPI/obj/Debug/net7.0/ref/exerciciosAPI.dll
+/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana03/exercicios03.04.05/exerciciosAPI/bin/Debug/net7.0/appsettings.Peformance.json

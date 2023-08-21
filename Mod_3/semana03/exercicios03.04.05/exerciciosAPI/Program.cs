@@ -16,7 +16,7 @@ builder.Configuration
        .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: false, reloadOnChange: true);
 
 // String de conexão BD
-string connectionString = "Data Source=/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana03/fichaCadastro.db;";
+string connectionString = "Data Source=/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana03/exercicios03.04.05/fichaCadastro.db;";
 
 // Injeção de dependência do contexto 
 builder.Services.AddDbContext<FichaContext>(options => options.UseSqlite(connectionString));
