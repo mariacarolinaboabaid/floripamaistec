@@ -1,0 +1,13 @@
+Healthy (Saudável): Isso indica que o sistema, serviço ou componente foi verificado e está operando normalmente, sem problemas conhecidos. Isso geralmente significa que todos os testes de saúde foram bem-sucedidos e que o componente está pronto para operação.
+
+Degraded (Degradado): Esse status é usado quando o sistema ou componente ainda está funcional, mas não em sua capacidade total. Pode haver problemas menores ou recursos temporariamente indisponíveis, mas o sistema ainda está em um estado operacional aceitável.
+
+Unhealthy (Não Saudável): Esse é um status que indica que o sistema ou componente está enfrentando problemas significativos que impedem sua operação normal. Pode ser causado por falhas críticas, erros graves ou falta de recursos essenciais.
+
+Unknown (Desconhecido): Algumas vezes, um healthcheck pode retornar esse status quando não é possível determinar o estado do componente devido a problemas de conectividade, falhas nos testes de saúde ou outros fatores.
+
+Maintenance (Manutenção): Alguns sistemas podem ter um status de healthcheck especial que indica que o componente está temporariamente fora de serviço devido a manutenção planejada. Isso ajuda a distinguir entre problemas não planejados e períodos de manutenção programados.
+
+
+
+

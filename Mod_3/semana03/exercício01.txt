@@ -1,0 +1,1 @@
+O HealthCheck é utilizado para verificar a saúde de vida a aplicação, retornando quais os componentes em questão estão funcionando corretamente e atendendo aos requisitos estabelecidos.
