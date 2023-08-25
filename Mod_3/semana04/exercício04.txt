@@ -1,0 +1,6 @@
+Design patterns são padrões de projeto pré-estabelecidos que visam solucionar problemas comuns/rotineiros, assim como são rotinas que beneficiam o desenvolvimento dos projetos.
+
+Os catálogos existentes são:
+a - padrão de criação: mecanismos de criação de objetos, que aumentam a flexibilidade e reutilização de código já existente;
+b - padrão estruturado: como montar objetos e classes em estruturas maiores mas ainda mantendo essas estruturas flexíveis e eficientes;
+c - padrão comportamental: voltados aos algoritmos e a designação de responsabilidades entre objetos;

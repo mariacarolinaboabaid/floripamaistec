@@ -1,0 +1,9 @@
+O SOLID é o conjunto acrônimo dos seguintes princípios:
+
+1 - Single responsability principle 
+2 - Open-closed principle 
+3 - Liskov Substitution principle 
+4 - Interface Segregation principle 
+5 - Dependency Inversion principle
+
+Seu objetivo na aplicação é tornar seu design de software robusto e arquiteturado, de forma a deixá-la mais organizada e com um grau maior de maturidade e confiabilidade.

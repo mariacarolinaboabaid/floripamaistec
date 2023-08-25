@@ -1,0 +1,18 @@
+Clean code (código limpo) é um conceito na engenharia de software que se refere à prática de escrever código de programação de forma clara, legível e organizada. O objetivo do clean code é tornar o código mais compreensível para os desenvolvedores, facilitando a manutenção, colaboração e evolução do software ao longo do tempo.
+
+1 - Mantenha o código o mais simples e direto possível, evitando abstrações complicadas;
+
+2 - Utilize nomes descritivos que reflitam claramente a finalidade das variáveis, funções, classes e outros elementos do código;
+
+3 -  As funções devem ser pequenas e focadas em uma única finalidade;
+
+4 - Faça o uso de comentários para explicar por que algo está sendo feito, principalmente frente as partes mais complexas do código;
+
+5 - Aplique uma formatação adequada;
+
+6 - Faça o correto tratamento de erro, retornando execeções ao invés de código;
+
+7 -  As classes devem ser pequenas e focadas em uma única responsabilidade;
+
+8 - Escreva testes automatizados ajuda a verificar a funcionalidade do código e a manter a confiança na sua qualidade à medida que o software é modificado.
+
