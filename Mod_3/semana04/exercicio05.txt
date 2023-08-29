@@ -1,0 +1,1 @@
+O padrão Command é um dos padrões de projeto de software pertencentes à categoria de padrões comportamentais. Ele é usado para encapsular uma solicitação como um objeto, permitindo que você parametrize clientes com diferentes solicitações, enfileire ou registre solicitações e ofereça suporte a operações que podem ser desfeitas.
