@@ -13,9 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // String de conexão BD
-// string connectionString = "Data Source=/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana02/fichaCadastro.db;";
-
-var connectionString = ConnectionStringSingleton.GerarInstancia();
+ConnectionStringSingleton connectionStringInstanciacao = ConnectionStringSingleton.GerarInstancia();
+string connectionString = connectionStringInstanciacao.ReturnConnection();
 // Injeção de dependência do contexto 
 builder.Services.AddDbContext<FichaContext>(options => options.UseSqlite(connectionString));
 

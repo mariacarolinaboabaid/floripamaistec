@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{48CAC4B3-E404-4433-BF50-7BE58083E6E9}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="exerciciosAPI/ConnectionStringSingleton/ConnectionStringSingleton.cs">
+    <Files>
+      <File FileName="exerciciosAPI/Program.cs" Line="31" Column="37" />
+      <File FileName="exerciciosAPI/appsettings.json" Line="1" Column="1" />
+      <File FileName="exerciciosAPI/ConnectionStringSingleton/ConnectionStringSingleton.cs" Line="28" Column="37" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="exercicios" expanded="True">
+            <Node name="exerciciosAPI" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="ConnectionStringSingleton" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.exerciciosAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

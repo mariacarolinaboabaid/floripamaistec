@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio03/exerciciosAPI/exerciciosAPI.csproj": {}
+    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio06/exerciciosAPI/exerciciosAPI.csproj": {}
   },
   "projects": {
-    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio03/exerciciosAPI/exerciciosAPI.csproj": {
+    "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio06/exerciciosAPI/exerciciosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio03/exerciciosAPI/exerciciosAPI.csproj",
+        "projectUniqueName": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio06/exerciciosAPI/exerciciosAPI.csproj",
         "projectName": "exerciciosAPI",
-        "projectPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio03/exerciciosAPI/exerciciosAPI.csproj",
+        "projectPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio06/exerciciosAPI/exerciciosAPI.csproj",
         "packagesPath": "/Users/mariacarolinaboabaid/.nuget/packages/",
-        "outputPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio03/exerciciosAPI/obj/",
+        "outputPath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio06/exerciciosAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mariacarolinaboabaid/.nuget/NuGet/NuGet.Config"

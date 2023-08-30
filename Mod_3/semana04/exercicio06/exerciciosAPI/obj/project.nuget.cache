@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tt5HOdcsG6ioJnQyjcru0yQmZwTcujjOu8TKDViMzesdaY+/92tl/JE7wSgI/nQxLPvQax2Hzbcv/5pZ6j4deQ==",
+  "dgSpecHash": "jkByN8he2c4ZkGr//g5SoDmnsxdwbfau5U5tHEgXbvcUhfyEillCzhee25eglbOywjikadMWWBfPkBRyLDNdHQ==",
   "success": true,
-  "projectFilePath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio03/exerciciosAPI/exerciciosAPI.csproj",
+  "projectFilePath": "/Users/mariacarolinaboabaid/Downloads/Senai/GitHub/floripamaistec/Mod_3/semana04/exercicio06/exerciciosAPI/exerciciosAPI.csproj",
   "expectedPackageFiles": [
     "/Users/mariacarolinaboabaid/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/mariacarolinaboabaid/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
