@@ -1,0 +1,43 @@
+<!-- Modal -->
+<div class="modal-header">
+    <h4>Formulário de Avaliação</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="fecharModal()"></button>
+</div>
+<div class="modal-body">
+    
+    <form [formGroup]="formularioAvaliacao" (ngSubmit)="onSubmit()" #form="ngForm">
+        <!-- Nome curso -->
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" formControlName="nome" name="nome" id="nome">
+            <label for="nome">Nome</label>
+            <span *ngIf="mensagemCampoInvalido('nome')">
+                Campo de preenchimento obrigatório!
+            </span>
+        </div>
+
+        <!-- Email -->
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" formControlName="email" name="email" id="email">
+            <label for="email">Email</label>
+            <span *ngIf="mensagemCampoInvalido('email')">
+                Campo de preenchimento obrigatório!
+            </span>
+        </div>
+
+        <!-- Data de nascimento -->
+        <div class="form-floating mb-3">
+            <input type="date" name="dataNascimento" id="dataNascimento" class="form-control"
+                formControlName="dataNascimento">
+            <label for="dataNascimento">Data de nascimento</label>
+            <span *ngIf="mensagemCampoInvalido('dataNascimento')">
+                Campo de preenchimento obrigatório!
+            </span>
+        </div>
+
+        <!-- Botões -->
+        <div class="modal-footer">
+            <button type="submit" (click)="onSubmit" class="btn btn-primary"
+                [disabled]="formularioAvaliacao.invalid">Enviar</button>
+        </div>
+    </form>
+</div>

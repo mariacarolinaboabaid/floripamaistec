@@ -1,0 +1,22 @@
+nav {
+    background-color: #e9e5e5;
+    box-shadow: 0px 0px 15px black;
+}
+
+div#navbarSupportedContent.collapse.navbar-collapse {
+    margin-right: 0px;
+    justify-content: flex-end;
+}
+
+ul#contentLinks {
+    margin-right: 0px!important;
+}
+
+.nav-link.active {
+    color: #0c3b99;
+}
+
+.nav-link.active:hover {
+    font-weight: 500;
+}
+

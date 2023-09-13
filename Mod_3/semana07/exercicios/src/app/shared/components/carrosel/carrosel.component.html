@@ -1,0 +1,28 @@
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <!-- Primeira img -->
+        <div class="carousel-item active" (click)="abrirModal()">
+            <img src="../../../assets/curso.png" class="d-block w-100" alt="Curso Desenvolvimento FullStack"
+                style="max-height: 500px;">
+        </div>
+        <!-- Segunda img -->
+        <div class="carousel-item" (click)="abrirModal()">
+            <img src="../../../assets/curso2.png" class="d-block w-100" alt="Curso de React"
+                style="max-height: 500px;">
+        </div>
+        <!-- Terceira img -->
+        <div class="carousel-item" (click)="abrirModal()">
+            <img src="../../../assets/curso3.png" class="d-block w-100" alt="Curso de Ciência de Dados com Python"
+                style="max-height: 500px;">
+        </div>
+    </div>
+    <!-- Botões -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

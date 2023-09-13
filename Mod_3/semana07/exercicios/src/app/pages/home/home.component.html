@@ -1,0 +1,12 @@
+<app-header></app-header>
+
+<div class="container mt-5">
+    <!-- Carrousel -->
+    <app-carrosel (openModalFormulario)="openModalFormularioHome()"></app-carrosel>
+
+    <!-- Modal -->
+    <ng-template #modalFormulario>
+        <app-modal-form (closeModalComponent)="closeModalFormularioHome()"></app-modal-form>
+    </ng-template>
+
+</div>
