@@ -9,4 +9,28 @@
         <app-modal-form (closeModalComponent)="closeModalFormularioHome()"></app-modal-form>
     </ng-template>
 
+    <!-- Tabela com usuários -->
+    <table class="table text-center mt-5 fs-6" style="box-shadow: 0px 0px 5px black;">
+        <thead>
+            <tr style="border-bottom: 0.5px solid black;">
+                <th class="align-middle" style="font-size: 12px;">Nome</th>
+                <th class="align-middle" style="font-size: 12px;">E-mail</th>
+                <th class="align-middle" style="font-size: 12px;">Data de Nascimento</th>
+                <th class="align-middle" style="font-size: 12px;"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listaUsuarios">
+                <td class="align-middle" style="font-size: 12px;">{{item.nome}}</td>
+                <td class="align-middle" style="font-size: 12px;">{{item.email}}</td>
+                <td class="align-middle" style="font-size: 12px;">{{item.dataNascimento | date:'yyyy-MM-dd'}}</td>
+                <td>
+                    <button class="btn btn-success me-2"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-primary me-2"><i class="bi bi-pencil-square"></i></button>
+                    <button class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>

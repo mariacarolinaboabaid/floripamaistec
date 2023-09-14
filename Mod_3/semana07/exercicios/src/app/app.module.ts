@@ -9,6 +9,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgbActiveModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalFormComponent } from './shared/components/modal-form/modal-form.component';
 import { CarroselComponent } from './shared/components/carrosel/carrosel.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { CarroselComponent } from './shared/components/carrosel/carrosel.compone
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [NgbActiveModal],
   bootstrap: [AppComponent]

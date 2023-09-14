@@ -1,12 +1,12 @@
 <!-- Modal -->
 <div class="modal-header">
-    <h4>Formulário de Avaliação</h4>
+    <h4>Criar Usuário</h4>
     <button type="button" class="btn-close" aria-label="Close" (click)="fecharModal()"></button>
 </div>
 <div class="modal-body">
     
     <form [formGroup]="formularioAvaliacao" (ngSubmit)="onSubmit()" #form="ngForm">
-        <!-- Nome curso -->
+        <!-- Nome  -->
         <div class="form-floating mb-3">
             <input type="text" class="form-control" formControlName="nome" name="nome" id="nome">
             <label for="nome">Nome</label>

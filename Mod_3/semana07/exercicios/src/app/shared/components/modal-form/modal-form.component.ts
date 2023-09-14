@@ -1,6 +1,8 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { CreateUserService } from '../../services/create-user.service';
+import { parseISO } from 'date-fns';
 
 @Component({
   selector: 'app-modal-form',
@@ -13,7 +15,7 @@ export class ModalFormComponent {
 
   formularioAvaliacao: FormGroup
 
-  constructor(private modal: NgbActiveModal){
+  constructor(private modal: NgbActiveModal, private createUserService: CreateUserService){
 
     this.formularioAvaliacao = new FormGroup(
       {
@@ -30,7 +32,18 @@ export class ModalFormComponent {
 
   onSubmit()
   {
-    console.log("Testando!")
+    var postData = 
+    {
+      "nomeCompleto": this.formularioAvaliacao.get('nome')?.value,
+      "emailInformado": this.formularioAvaliacao.get('email')?.value,
+      "dataDeNascimento": this.formularioAvaliacao.get('dataNascimento')?.value
+    }
+
+    this.createUserService.createUser(postData)
+      .subscribe((result) => {
+        console.log(result, "Usuário registrado com sucesso!")
+        this.fecharModal();
+      })
   }
 
   fecharModal(){
