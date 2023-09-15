@@ -9,6 +9,8 @@ namespace exerciciosAPI.DTO.Ficha
 {
     public class FichaReadDTO
     {
+        public int Id { get; set; }
+        
         public string Nome { get; set; }
 
         public string Email { get; set; }
