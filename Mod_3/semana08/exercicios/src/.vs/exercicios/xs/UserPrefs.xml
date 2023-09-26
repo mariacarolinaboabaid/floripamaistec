@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{4DCEB368-CCA0-4A93-B0F9-D9F0D5C12E40}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="loja/Models/VendaModel.cs">
+    <Files>
+      <File FileName="loja/Dto/Produto/ProdutoCreateDTO.cs" Line="5" Column="1" />
+      <File FileName="loja/Dto/Produto/ProdutoReadDTO.cs" Line="1" Column="1" />
+      <File FileName="loja/Dto/Produto/ProdutoUpdateDTO.cs" Line="1" Column="1" />
+      <File FileName="loja/Dto/Venda/VendaCreateDTO.cs" Line="1" Column="1" />
+      <File FileName="loja/Dto/Venda/VendaReadDTO.cs" Line="1" Column="1" />
+      <File FileName="loja/Dto/Venda/VendaUpdateDTO.cs" Line="1" Column="1" />
+      <File FileName="loja/Models/ClienteModel.cs" Line="1" Column="1" />
+      <File FileName="loja/Models/ProdutoModel.cs" Line="1" Column="1" />
+      <File FileName="loja/Models/VendaModel.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="exercicios" expanded="True">
+            <Node name="loja" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Context" expanded="True" />
+              <Node name="Dto" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="VendaModel.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.loja PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

@@ -1,0 +1,25 @@
+services: # define quais são os serviço que o docker irá criar
+ db: # nome do serviço db
+   image: postgres # imagem do serviço
+   restart: always # sempre que eu executar o docker compose up ele ira restartar o db
+   environment: # variaveis de ambiente
+     POSTGRES_PASSWORD: example # define o valor da variável de senha do postgres
+   volumes: # partição virtual no docker
+     - postgres-data:/var/lib/postgresql/data
+   ports:
+     - 5432:5432 # a porta exposta é a 5432
+ app: #serviço app
+   build:
+     context: . # executa o dockerfile no diretório onde está o docker-compose.yml 
+   ports:
+     - 5000:5000 # a porta exposta é a 5000
+   depends_on: 
+     - db # o app depende que o db exista
+volumes:
+  postgres-data:
+
+
+
+
+
+
