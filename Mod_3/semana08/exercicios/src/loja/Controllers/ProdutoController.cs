@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace loja.Controllers
 {
     [ApiController]
-    [Route("api/controller")]
+    [Route("api/[controller]")]
     public class ProdutoController : ControllerBase
     {
 

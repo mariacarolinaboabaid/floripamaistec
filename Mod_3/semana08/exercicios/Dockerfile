@@ -4,14 +4,11 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 as build-env
 # define o diretório de trabalho dentro do container, criando a pasta /app_container para colocar os arquivos 
 WORKDIR /app_container 
 
-# copia o arquivo csproj do host para o WORKDIR
-COPY src/loja/*.csproj .  
+# copia todo o src para dentro do workdir
+COPY src .
 
 # executa comandos dentro do container para restaurar a imagem do projeto
 RUN dotnet restore "loja.csproj" --use-current-runtime
-
-# copia todo o src para dentro do workdir
-COPY src .
 
 RUN dotnet publish exercicios.sln -c Release -o /publish
 
@@ -25,7 +22,7 @@ WORKDIR /publish
 COPY --from=build-env /publish .
 
 # porta do container que correponde a porta do programa é a 5000
-EXPOSE 5000
+EXPOSE 80
 
 # comando padrão a ser executado quando o container for iniciado, ele permite que o container receba comandos extras
 ENTRYPOINT [ "dotnet", "loja.dll" ]
